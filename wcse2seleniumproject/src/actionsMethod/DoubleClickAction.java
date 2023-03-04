@@ -26,6 +26,7 @@ public class DoubleClickAction {
 		 WebElement target = driver.findElement(By.partialLinkText("Logo & Color Scheme"));
 		 
 		 Actions act = new Actions(driver);
+		 // mouserHover Action
 		 act.moveToElement(target).perform();
 		 target.click();
 		 
@@ -33,6 +34,7 @@ public class DoubleClickAction {
 		 driver.findElement(By.xpath("//label[@for='uploadNewLogoOption']")).click();
 		 
 		 WebElement target2 = driver.findElement(By.name("formCustomInterfaceLogo.logo"));
+		 //DoubleClick Action
 		 act.doubleClick(target2).perform();
 		 
 		 
