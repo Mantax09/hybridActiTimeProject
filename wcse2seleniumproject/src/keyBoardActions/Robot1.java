@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Robot1 {
 	
-	public static void main(String[] args) throws AWTException {
+	public static void main(String[] args) throws AWTException, InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -30,6 +30,21 @@ public class Robot1 {
 		        
 		        robot.keyRelease(KeyEvent.VK_CONTROL);
 		        robot.keyRelease(KeyEvent.VK_P);
+		        
+		        // Handle printPopup
+		        
+		       Thread.sleep(2000);
+	           robot.keyPress(KeyEvent.VK_TAB);
+		       robot.keyRelease(KeyEvent.VK_TAB);
+		       
+		       // hit enter button
+		       Thread.sleep(2000);
+		       robot.keyPress(KeyEvent.VK_ENTER);
+		       robot.keyRelease(KeyEvent.VK_ENTER);
+		       
+		       Thread.sleep(2000);
+		       driver.quit();
+		        
 		
 	}
 
