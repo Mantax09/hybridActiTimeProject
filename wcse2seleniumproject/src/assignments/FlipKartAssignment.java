@@ -16,7 +16,7 @@ public class FlipKartAssignment {
 		 driver.get("https://www.flipkart.com/");
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		 
-		 driver.findElement(By.xpath("//button[.='✕']")).click();
+		// driver.findElement(By.xpath("//button[.='✕']")).click();
 		 
 		 driver.findElement(By.xpath("//input[@name='q']")).sendKeys("laptop");
 		 
