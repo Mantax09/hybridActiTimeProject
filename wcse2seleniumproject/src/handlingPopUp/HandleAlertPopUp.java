@@ -6,13 +6,17 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class HandleAlertPopUp {
 	
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		
-		WebDriver driver=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		
+		WebDriver driver=new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
@@ -30,10 +34,10 @@ public class HandleAlertPopUp {
 		  //   al.accept();
 		     
 	  //   2} Dismiss the alert Popup
-		     //al.dismiss();
+		     al.dismiss();
 		     
      //    3} Print the Text of alert Popup
-		     System.out.println(al.getText());
+		   //  System.out.println(al.getText());
 		     
     //  4} pass the characters to alert Popup
 		     //al.sendKeys("aaaaaa");
