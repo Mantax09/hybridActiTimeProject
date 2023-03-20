@@ -15,6 +15,8 @@ public class Flib {
 	
 	// To Store Generic Reuseable Methods
 	
+	
+	// read the data from excel sheet
 	public String readExcelData(String excelPath,String sheetName,int rowCount,int cellCount) throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fis = new FileInputStream(excelPath);//provide the path of file.
@@ -25,5 +27,32 @@ public class Flib {
 		String data = cell.getStringCellValue();// read the data from cell 
 		return data;
 	}
+	
+	
+	// to get row count
+	public int rowCount(String excelPath,String sheetName) throws EncryptedDocumentException, IOException
+	{
+		FileInputStream fis = new FileInputStream(excelPath);
+		Workbook wb = WorkbookFactory.create(fis);
+		Sheet sheet = wb.getSheet(sheetName);
+		
+		int rc = sheet.getLastRowNum();
+		return rc;
+	}
+	
+	
+	//to write data in excel sheet
+	public void writeExcelData(String excelPath,String sheetName,int rowCount,int cellCount,String data) throws EncryptedDocumentException, IOException
+	{
+		FileInputStream fis = new FileInputStream(excelPath);
+		Workbook wb = WorkbookFactory.create(fis);
+		Sheet sheet = wb.getSheet(sheetName);
+		Row row = sheet.getRow(rowCount);
+		
+		Cell cell = row.createCell(cellCount);
+		cell.setCellValue(data);
+	}
+	
+	
 
 }
