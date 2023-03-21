@@ -18,7 +18,9 @@ public class ReadPrpertyData {
 		// we need to use this methods 
 		
 		prop.load(fis);// make the file ready for read
-		String data = prop.getProperty("url");
+		
+		String data = prop.getProperty("username");// use to read key value from property file
+		
 		System.out.println(data);
 		
 		
