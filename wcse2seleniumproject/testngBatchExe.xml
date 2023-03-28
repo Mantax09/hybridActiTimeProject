@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testNGpack.Demo"/>
-      <class name="testNGpack.Demo2"/>
-      <class name="testNGpack.Demo3"/>
+      <class name="testngExecution.TestngClass1"/>
+      <class name="testngExecution.TestngClass2"/>
+      <class name="testngExecution.TestngClass3"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
