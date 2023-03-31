@@ -1,94 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-28T20:26:07 IST" name="Suite" finished-at="2023-03-28T20:26:17 IST" duration-ms="10003">
+  <suite started-at="2023-03-31T20:20:58 IST" name="Default suite" finished-at="2023-03-31T20:21:04 IST" duration-ms="6335">
     <groups>
     </groups>
-    <test started-at="2023-03-28T20:26:07 IST" name="ChromeTest" finished-at="2023-03-28T20:26:16 IST" duration-ms="8940">
-      <class name="testngExecution.ActiTimeValidLogin">
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testngExecution.ActiTimeValidLogin@5fd4f8f5]" started-at="2023-03-28T20:26:07 IST" name="validLogin" finished-at="2023-03-28T20:26:15 IST" duration-ms="8212" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://desktop-aigvo6j/login.do]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[manager]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-03-31T20:20:58 IST" name="Default test" finished-at="2023-03-31T20:21:04 IST" duration-ms="6335">
+      <class name="assertionTestng.Assert2">
+        <test-method is-config="true" signature="property()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:20:58 IST" name="property" finished-at="2023-03-31T20:20:58 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testngExecution.ActiTimeValidLogin@5fd4f8f5]" started-at="2023-03-28T20:26:15 IST" name="close" finished-at="2023-03-28T20:26:16 IST" duration-ms="682" status="PASS">
+        </test-method> <!-- property -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:20:58 IST" name="launchBrowser" finished-at="2023-03-31T20:21:01 IST" duration-ms="2992" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- testngExecution.ActiTimeValidLogin -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2023-03-28T20:26:07 IST" name="FirefoxTest" finished-at="2023-03-28T20:26:17 IST" duration-ms="10003">
-      <class name="testngExecution.ActiTimeValidLogin">
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testngExecution.ActiTimeValidLogin@4229bb3f]" started-at="2023-03-28T20:26:07 IST" name="validLogin" finished-at="2023-03-28T20:26:17 IST" duration-ms="9957" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://desktop-aigvo6j/login.do]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[manager]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="login()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:21:01 IST" name="login" finished-at="2023-03-31T20:21:03 IST" duration-ms="2593" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=id, value=loginButton}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:37879, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13872, moz:profile: C:\Users\QSPIDE~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37879/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
+              <![CDATA[expected [idontknow] but found [actiTIME - Enter Time-Track]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=id, value=loginButton}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:37879, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13872, moz:profile: C:\Users\QSPIDE~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37879/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at testngExecution.ActiTimeValidLogin.validLogin(ActiTimeValidLogin.java:52)
+              <![CDATA[java.lang.AssertionError: expected [idontknow] but found [actiTIME - Enter Time-Track]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at assertionTestng.Assert2.login(Assert2.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,24 +45,29 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testngExecution.ActiTimeValidLogin@4229bb3f]" started-at="2023-03-28T20:26:17 IST" name="close" finished-at="2023-03-28T20:26:17 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:21:03 IST" name="logout" finished-at="2023-03-31T20:21:04 IST" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- testngExecution.ActiTimeValidLogin -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- logout -->
+      </class> <!-- assertionTestng.Assert2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
