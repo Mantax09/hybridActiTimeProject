@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
-    <parameter name="password" value="manager"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="url" value="http://desktop-aigvo6j/login.do"/>
-    <parameter name="username" value="admin"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngExecution.ActiTimeValidLogin">
+      <class name="testNGdynamicScreenshot.ActiTimeLogin">
         <methods>
-          <include name="close"/>
-          <include name="validLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginPageMethod"/>
         </methods>
-      </class> <!-- testngExecution.ActiTimeValidLogin -->
+      </class> <!-- testNGdynamicScreenshot.ActiTimeLogin -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

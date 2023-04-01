@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[@Test annotaions start execution!!]]>
+    </line>
+    <line>
+      <![CDATA[Test is Start!!!]]>
+    </line>
+    <line>
+      <![CDATA[This is failed MethodloginPageMethodScreenShot is taken]]>
+    </line>
+    <line>
+      <![CDATA[Test is Start!!!]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-03-31T20:20:58 IST" name="Default suite" finished-at="2023-03-31T20:21:04 IST" duration-ms="6335">
+  <suite started-at="2023-04-01T19:37:57 IST" name="Default suite" finished-at="2023-04-01T19:38:04 IST" duration-ms="6182">
     <groups>
     </groups>
-    <test started-at="2023-03-31T20:20:58 IST" name="Default test" finished-at="2023-03-31T20:21:04 IST" duration-ms="6335">
-      <class name="assertionTestng.Assert2">
-        <test-method is-config="true" signature="property()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:20:58 IST" name="property" finished-at="2023-03-31T20:20:58 IST" duration-ms="5" status="PASS">
+    <test started-at="2023-04-01T19:37:57 IST" name="Default test" finished-at="2023-04-01T19:38:04 IST" duration-ms="6182">
+      <class name="testNGdynamicScreenshot.ActiTimeLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNGdynamicScreenshot.ActiTimeLogin@29e495ff]" started-at="2023-04-01T19:37:57 IST" name="setUp" finished-at="2023-04-01T19:37:59 IST" duration-ms="1719" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- property -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:20:58 IST" name="launchBrowser" finished-at="2023-03-31T20:21:01 IST" duration-ms="2992" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="login()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:21:01 IST" name="login" finished-at="2023-03-31T20:21:03 IST" duration-ms="2593" status="FAIL">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPageMethod()[pri:0, instance:testNGdynamicScreenshot.ActiTimeLogin@29e495ff]" started-at="2023-04-01T19:37:59 IST" name="loginPageMethod" finished-at="2023-04-01T19:37:59 IST" duration-ms="210" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [idontknow] but found [actiTIME - Enter Time-Track]]]>
+              <![CDATA[The following asserts failed:
+expected [loginID] but found [actiTIME - Login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [idontknow] but found [actiTIME - Enter Time-Track]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at assertionTestng.Assert2.login(Assert2.java:36)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [loginID] but found [actiTIME - Login]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testNGdynamicScreenshot.ActiTimeLogin.loginPageMethod(ActiTimeLogin.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,13 +67,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Test is Start!!!]]>
+            </line>
+            <line>
+              <![CDATA[This is failed MethodloginPageMethodScreenShot is taken]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:assertionTestng.Assert2@4de4b452]" started-at="2023-03-31T20:21:03 IST" name="logout" finished-at="2023-03-31T20:21:04 IST" duration-ms="716" status="PASS">
+        </test-method> <!-- loginPageMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGdynamicScreenshot.ActiTimeLogin@29e495ff]" started-at="2023-04-01T19:38:00 IST" name="tearDown" finished-at="2023-04-01T19:38:00 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- assertionTestng.Assert2 -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNGdynamicScreenshot.ActiTimeLogin@29e495ff]" started-at="2023-04-01T19:38:00 IST" name="setUp" finished-at="2023-04-01T19:38:01 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="homePageMethod()[pri:0, instance:testNGdynamicScreenshot.ActiTimeLogin@29e495ff]" started-at="2023-04-01T19:38:01 IST" name="homePageMethod" finished-at="2023-04-01T19:38:03 IST" depends-on-methods="testNGdynamicScreenshot.ActiTimeLogin.loginPageMethod" duration-ms="2293" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test is Start!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- homePageMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGdynamicScreenshot.ActiTimeLogin@29e495ff]" started-at="2023-04-01T19:38:03 IST" name="tearDown" finished-at="2023-04-01T19:38:04 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNGdynamicScreenshot.ActiTimeLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

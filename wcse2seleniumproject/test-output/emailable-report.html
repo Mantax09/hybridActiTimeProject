@@ -9,18 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,335</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,182</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">assertionTestng.Assert2</td><td><a href="#m0">login</a></td><td rowspan="1">1680274261045</td><td rowspan="1">2593</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testNGdynamicScreenshot.ActiTimeLogin</td><td><a href="#m0">loginPageMethod</a></td><td rowspan="1">1680358079680</td><td rowspan="1">210</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testNGdynamicScreenshot.ActiTimeLogin</td><td><a href="#m1">homePageMethod</a></td><td rowspan="1">1680358081634</td><td rowspan="1">2293</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">assertionTestng.Assert2#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [idontknow] but found [actiTIME - Enter Time-Track]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at assertionTestng.Assert2.login(Assert2.java:36)
+<h2>Default test</h2><h3 id="m0">testNGdynamicScreenshot.ActiTimeLogin#loginPageMethod</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test is Start!!!<br/>This is failed MethodloginPageMethodScreenShot is taken</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [loginID] but found [actiTIME - Login]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testNGdynamicScreenshot.ActiTimeLogin.loginPageMethod(ActiTimeLogin.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,5 +47,6 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testNGdynamicScreenshot.ActiTimeLogin#homePageMethod</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test is Start!!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
